@@ -1,0 +1,33 @@
+h1{
+    border: 12px solid green;
+}
+
+.annad{
+    border: 3px solid red;
+    color: red;
+    padding: 36px;
+    margin-top: 2em;
+
+}
+
+.blueb{
+    border: 4px dashed blue;
+    color: blue;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+li {
+    border: 3px dashed green;
+    padding: 1em;
+    margin: 1em;
+}
+
+.inLine li{
+    display: inline;
+    border: 2px dashed blue;
+}
+.inlineBlock li{
+    display: inline-block;
+    border: 2px dashed red;
+}
