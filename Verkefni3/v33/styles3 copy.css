@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    border: 1px solid blue;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 60em;
+    font-family: 'Noto Serif', serif;
+    background-color: rgb(71, 68, 112);
+}
+/* Grid area */
+h1,h2,h3 {
+    font-family: 'Heebo', sans-serif;
+}
+.haus {
+    grid-area: haus;
+    background-color: rgb(18, 31, 148);
+}
+.topnav{
+    grid-area: topnav;
+}
+.main{
+    grid-area: main;
+}
+.foot{
+    grid-area: foot;
+
+}
+/* Dálkar í main */
+.as1 {
+    grid-area: as1;
+    background-color: rgb(136, 136, 136);
+    padding: 1em;
+}
+.as2 {
+    grid-area: as2;
+    background-color: rgb(94, 116, 241);
+    padding: 1em;
+}
+.art1 {
+    grid-area: art1;
+    background-color: rgb(94, 116, 241);
+    padding: 1em;
+}
+
+/* Template area */
+.body{
+    display: grid;
+    grid-gap: 0;
+    padding: 1em;
+    grid-template-areas: 
+        'haus'
+        'topnav'
+        'main'
+        'foot'
+}
+.main {
+    display: grid;
+    grid-gap: 0;
+    padding: 1em;
+    grid-template-areas: 
+        'as1 art1 as2';
+    grid-template-columns: 1fr 3fr 1fr;
+}
+/* Topmenu */
+.topmenu, .footmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0em;
+    padding: 1em 0em;
+    background-color: rgb(12, 10, 34);
+}
+.topmenu li, .footmenu li{
+    list-style-type: none;
+
+}
+.haus, .main, .art1, .as1, .as2, .foot {
+    border: 1px solid blue;
+    padding: 1em;
+}
+.foot{
+    background-color: rgb(117, 117, 117);
+}
+
+

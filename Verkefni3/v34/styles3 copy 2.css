@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    border: 1px solid blue;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 60em;
+    font-family: 'Anton', sans-serif;
+    background-color: black;
+}
+/* Grid area */
+
+h1,h2,h3{
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+.haus {
+    grid-area: haus;
+    background-color: red;
+    font-size: 2em;
+}
+.topnav{
+    grid-area: topnav;
+    background-color: red;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(54, 15, 15);
+}
+.foot{
+    grid-area: foot;
+    background-color: red;
+}
+/* Dálkar í main */
+.as1 {
+    grid-area: as1;
+    background-color: red;
+}
+.as2 {
+    grid-area: as2;
+    background-color: red;
+}
+.art1 {
+    grid-area: art1;
+    background-color: red;
+}
+
+/* Template area */
+.body{
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas: 
+        'haus'
+        'topnav'
+        'main'
+        'foot'
+}
+.main {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: 
+        'as1 art1 as2';
+    grid-template-columns: 1fr 3fr 1fr;
+}
+/* Topmenu */
+.topmenu, .footmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0em;
+    padding: 1em 0em;
+    background-color: rgb(124, 101, 101);
+}
+.topmenu li, .footmenu li{
+    list-style-type: none;
+
+}
+.haus, .main, .art1, .as1, .as2, .foot {
+    border: 1px solid blue;
+    padding: 1em;
+}
+
+
+
