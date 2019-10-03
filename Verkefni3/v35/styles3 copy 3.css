@@ -3,7 +3,6 @@
 }
 
 body {
-    border: 1px solid blue;
     margin: 0 auto;
     padding: 1em;
     max-width: 60em;
@@ -57,7 +56,6 @@ h1,h2,h3{
 }
 .main {
     display: grid;
-    grid-gap: 2em;
     grid-template-areas: 
         'as1 art1 as2';
     grid-template-columns: 1fr 3fr 1fr;
@@ -76,7 +74,6 @@ h1,h2,h3{
 
 }
 .haus, .main, .art1, .as1, .as2, .foot {
-    border: 1px solid blue;
     padding: 1em;
 }
 
