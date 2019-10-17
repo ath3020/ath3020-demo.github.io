@@ -69,7 +69,7 @@ h1 {
 }
 .footnav li{
     list-style-type: none;
-    line-height: 1.5;
+    line-height: 2;
 }
 .topnav a{
     padding-left: 2em;
@@ -101,7 +101,7 @@ h1 {
     margin: .5em 0 0 0;
 }
 .copy{
-    justify-content: center;
+    text-align: center;
     color: rgb(240, 202, 152)
 }
 
