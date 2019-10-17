@@ -1,4 +1,4 @@
-# ath3020-demo.github.io
+# 2019 Haust - Andri Þór 
 ### VEFÞ1-Verkefni
 * Andri
 * Vefþróun 1
